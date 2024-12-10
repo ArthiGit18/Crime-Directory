@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ isBlack }) => {
     return (
-        <div className='navbar_wrapper'>
+      <div className={`navbar_wrapper ${isBlack ? 'black' : ''}`}>
+  
             <div className='nav_logo'>
                 <h1>Crime Chronicles</h1>
             </div>
@@ -10,6 +11,9 @@ const Navbar = () => {
                 <ul class="navbar">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="/">Criminal Records</a>
@@ -37,6 +41,9 @@ const Navbar = () => {
                             <li><a href="/">Tools of the Trade</a></li>
                             <li><a href="/">Learn Forensics</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/">Contact</a>
                     </li>
                 </ul>
             </div>
