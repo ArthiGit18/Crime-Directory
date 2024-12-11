@@ -32,18 +32,35 @@ export const Main = () => {
     };
   }, []);
 
+  // Scroll to specific section
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div>
-      <Navbar isBlack={isNavbarBlack} />
+      <Navbar isBlack={isNavbarBlack} onLinkClick={scrollToSection} />
       <Hero />
-      <About />
+      <div id="about-section">
+        <About />
+      </div>
       <TopPicks />
-      <ForensicFacts />
+      <div id="forensicfacts">
+        <ForensicFacts />
+      </div>
       <TestimonialBook />
       <Cards />
       <BedtimeStorySection />
       <PuzzleGameSection />
-      <ContactSection />
+      <div id="contact">
+        <ContactSection />
+      </div>
       <Footer />
     </div>
   );
