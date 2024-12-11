@@ -11,7 +11,7 @@ import PuzzleGameSection from '../pages/Puzzle';
 import Footer from '../pages/Footer';
 import ContactSection from '../pages/Contact';
 
-export const Main = () => {
+const Main = () => {
   const [isNavbarBlack, setIsNavbarBlack] = useState(false);
 
   // Effect to change navbar background color on scroll
@@ -42,26 +42,27 @@ export const Main = () => {
       });
     }
   };
-
   return (
     <div>
-      <Navbar isBlack={isNavbarBlack} onLinkClick={scrollToSection} />
-      <Hero />
-      <div id="about-section">
-        <About />
-      </div>
-      <TopPicks />
-      <div id="forensicfacts">
-        <ForensicFacts />
-      </div>
-      <TestimonialBook />
-      <Cards />
-      <BedtimeStorySection />
-      <PuzzleGameSection />
-      <div id="contact">
-        <ContactSection />
-      </div>
-      <Footer />
+    <Navbar isBlack={isNavbarBlack} onLinkClick={scrollToSection} />
+    <Hero />
+    <div id="about-section">
+      <About />
     </div>
-  );
-};
+    <TopPicks />
+    <div id="forensicfacts">
+      <ForensicFacts />
+    </div>
+    <TestimonialBook />
+    <Cards />
+    <BedtimeStorySection />
+    <PuzzleGameSection />
+    <div id="contact">
+      <ContactSection />
+    </div>
+    <Footer />
+  </div>
+  )
+}
+
+export default Main
