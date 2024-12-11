@@ -9,6 +9,8 @@ const PuzzleGameSection = () => {
 
   // Images array with URLs for each puzzle image
   const images = [
+    
+    "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d",
     "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5",  // Image 1
     "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",  // Image 2
     "https://images.unsplash.com/photo-1589286945863-49e2d84d8e89",  // Image 3
