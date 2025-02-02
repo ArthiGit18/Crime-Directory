@@ -12,8 +12,8 @@ const PuzzleGameSection = () => {
     
     "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d",
     "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5",  // Image 1
-    "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",  // Image 2
-    "https://images.unsplash.com/photo-1589286945863-49e2d84d8e89",  // Image 3
+    "https://i.pinimg.com/736x/09/9d/3d/099d3d1507bda50ca865b1bcbfa5f9ff.jpg",  // Image 2
+    "https://i.pinimg.com/736x/37/fb/0e/37fb0e0b819d13f9c407901a19d865f6.jpg",  // Image 3
   ];
 
   // This function is triggered when the puzzle is solved
